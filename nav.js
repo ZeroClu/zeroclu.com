@@ -86,6 +86,14 @@ function navFunction() {
     navLi7.appendChild(navALi7);
     navUl.appendChild(navLi7);
 
+    var scriptDrpdwn = document.createElement("script");
+    scriptDrpdwn.setAttribute("src", "drpdwn");
+
+    var scriptJQuery = document.createElement("script");
+    scriptJQuery.setAttribute("src", "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js");
+
     document.getElementById("pageHeader").appendChild(navNav);
     
+    document.head.appendChild(scriptDrpdwn);
+    document.head.appendChild(scriptJQuery)
 }
