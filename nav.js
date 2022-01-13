@@ -87,7 +87,7 @@ function navFunction() {
     navUl.appendChild(navLi7);
 
     var scriptDrpdwn = document.createElement("script");
-    scriptDrpdwn.setAttribute("src", "drpdwn");
+    scriptDrpdwn.setAttribute("src", "drpdwn.js");
 
     var scriptJQuery = document.createElement("script");
     scriptJQuery.setAttribute("src", "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js");
