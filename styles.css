@@ -1,0 +1,185 @@
+*, *::before, *::after {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #111; 
+    color: white;
+}
+
+nav {
+    background: #333;
+    padding: 5px 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+}
+
+.menu li a {
+    display: block;
+}
+
+.user a {
+    font-size: 20px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.button.secondary {
+    border-bottom: 1px #555 solid;
+}
+
+/* Mobile Menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drpdwn {
+    order: 1;
+}
+
+.listitem.button {
+    order: 2;
+}
+
+.listitem {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.listitem.active {
+    display: block;
+}
+
+.drpdwn {
+    cursor: pointer;
+}
+
+.bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+}
+
+.bars::before, .bars::after {
+    background: #999;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 18px;
+    position: absolute;
+}
+
+.bars::before {
+    top: 5px;
+}
+
+.bars::after {
+    top: -5px;
+}
+
+/* Tablet Menu */
+
+@media all and (min-width: 468px) {
+    .menu {
+        justify-content: center;
+    }
+
+    .user {
+        flex: 1;
+    }
+
+    .listitem.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .drpdwn {
+        order: 2;
+    }
+
+    .button.secondary {
+        border: 0;
+    }
+
+    .button a {
+        text-decoration: none;
+        padding: 7px 15px;
+        background: #4095bf;
+        border-radius: 50em;
+        border: 1px solid #4095bf;
+    }
+
+    .button.secondary a {
+        background: transparent;
+    }
+
+    .button a:hover {
+        transition: all .25s;
+    }
+
+    .button:not(.secondary) a:hover {
+        background: #327fa5;
+    }
+
+    .button.secondary a:hover {
+        color: #ddd;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .listitem {
+        display: block;
+        width: auto;
+    }
+
+    .drpdwn {
+        display: none;
+    }
+
+    .user {
+        order: 0;
+    }
+
+    .listitem {
+        order: 1;
+    }
+
+    .button {
+        order: 2;
+    }
+
+    .menu li {
+        padding: 15px 10px;
+    }
+
+    .menu li.button {
+        padding-right: 0;
+    }
+}
