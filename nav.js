@@ -41,7 +41,7 @@ function navFunction() {
 
     var navALi1 = document.createElement("a");
     var navALi1T = document.createTextNode("ZeroClu");
-    navALi1.setAttribute("href", "projects");
+    navALi1.setAttribute("href", "index");
     navALi1.appendChild(navALi1T);
     navLi1.appendChild(navALi1);
     navUl.appendChild(navLi1);
@@ -54,15 +54,15 @@ function navFunction() {
     navUl.appendChild(navLi2);
 
     var navALi3 = document.createElement("a");
-    var navALi3T = document.createTextNode("In Progress");
-    navALi3.setAttribute("href", "inprogress");
+    var navALi3T = document.createTextNode("About");
+    navALi3.setAttribute("href", "about");
     navALi3.appendChild(navALi3T);
     navLi3.appendChild(navALi3);
     navUl.appendChild(navLi3);
 
     var navALi4 = document.createElement("a");
-    var navALi4T = document.createTextNode("About");
-    navALi4.setAttribute("href", "about");
+    var navALi4T = document.createTextNode("Contact");
+    navALi4.setAttribute("href", "contact");
     navALi4.appendChild(navALi4T);
     navLi4.appendChild(navALi4);
     navUl.appendChild(navLi4);
